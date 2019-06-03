@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Canvas from './components/time-slot/canvas';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="wrapper">
+      <header className="page-header">
+        <div className="container">
+          <h3>Scheduler App</h3>
+        </div>
       </header>
+      <div className="container">
+        <div className="col-md-3">Some menu</div>
+        <div className="col-md-9">
+          <Canvas />
+        </div>
+      </div>
     </div>
   );
 }
