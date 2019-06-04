@@ -1,5 +1,6 @@
 import React from 'react';
-import Canvas from './components/time-slot/canvas';
+import Canvas from './components/layout/canvas';
+import Owner from './components/owner/owner-form';
 
 function App() {
   return (
@@ -10,9 +11,13 @@ function App() {
         </div>
       </header>
       <div className="container">
-        <div className="col-md-3">Some menu</div>
-        <div className="col-md-9">
-          <Canvas />
+        <div className="row">
+          <div className="col-md-3">
+            <Owner />
+          </div>
+          <div className="col-md-9">
+            <Canvas />
+          </div>
         </div>
       </div>
     </div>
