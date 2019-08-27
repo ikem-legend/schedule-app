@@ -14,6 +14,7 @@ class Owner extends Component {
 	}
 	handleSubmit = (e) => {
 		e.preventDefault()
+		alert(`Owner ${this.state.ownerName} added with color ${this.state.ownerColor}`)
 		console.log(document.getElementById("ownerName, ownerColor"))
 		console.log(this.state)
 	}
